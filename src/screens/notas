@@ -1,0 +1,11 @@
+import Icon from 'react-native-vector-icons/FontAwesome';
+
+static navigationOptions = {
+      tabBarLabel:'Home',
+      tabBarIcon: () => (
+        <Icon name="home" size={26} color="#000" />
+      )
+    }
+
+
+<ImageBackground source={require('./../images/loginBackground.jpg')} style={{height:'100%', width:'100%', justifyContent:'center', alignItems:'center'}}>
