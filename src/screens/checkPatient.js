@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, Text, Image, TextInput, StyleSheet, TouchableOpacity, ImageBackground} from 'react-native';
+import {View, Text, Image, TextInput, StyleSheet, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 export default class checkPatient extends Component {
@@ -19,7 +19,7 @@ export default class checkPatient extends Component {
                   <TextInput style={style.input}/>
               </View>
               <View style={style.btnArea}>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={()=>this.props.navigation.navigate('testing')}>
                     <Icon name={'arrow-circle-right'} size={60} color={'#4682B4'} />
                 </TouchableOpacity>
               </View>

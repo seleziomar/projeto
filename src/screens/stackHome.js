@@ -4,10 +4,12 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 
 import homePage from './../screens/homePage';
 import checkPatient from './checkPatient';
+import testing from './testing';
 
 const Navegador = createStackNavigator({
   Home: { screen:homePage, navigationOptions:()=>({header:null}) },
-  checkPatient:{ screen: checkPatient, navigationOptions:()=>({title:'Novo Teste'}) }
+  checkPatient:{ screen: checkPatient, navigationOptions:()=>({title:'Novo Teste'}) },
+  testing: { screen:testing, navigationOptions:()=>({title:'Novo Teste'}) }
 },{
   navigationOptions:{
     tabBarLabel:'Home',
